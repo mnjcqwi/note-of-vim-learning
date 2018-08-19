@@ -63,8 +63,22 @@ Adding space before and after +
 
 Explain:
 f+ //move the cursor to the first appearance 
-s + ESC // delete current character and change to insert mode and adding space + space  
+s + ESC //delete current character and change to insert mode and adding space + space  
 ; //repeat f+ 
 . // repeat the second steps
 
+##### Tips7. Pause with the brush off your page
+
+很简单，当你停下来编辑的时候请按ESC回到normal mode下,通常来说我们退出insert mode的情况下都是在最后的位置，所以一个简单的做法就是当我们想再次输入的时候 敲击A，来到句尾
+
+或者创建新的一行o来编写
+
+##### Tips9 Compose Repeatable Change
+
+举一个例子，删除一个单词，我们就应该用daw = "delete a word",这样的好处是可以我们要再删除一个单词可以直接用.
+
+
+##### Tips10 Use Count to do the Simple Arithmetic
+C-a 如果在数字上，就相当于加法，如果cursor不在数字上，想到与cursor jump to 第一个数字上
+C-x,如果在数字上，相当于减法，如果cursor不在数字上，相当于调到第一个数字上
 
